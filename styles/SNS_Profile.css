@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light--grey--color: #f7f9fc;
+  --sky--blue--color: #6fbaf8;
+}
+
+.container {
+  background-color: var(--light--grey--color);
+  width: 100%;
+  padding: 100px;
+}
+
+.profile {
+  width: 100%;
+  background-color: white;
+  padding: 50px 70px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.profile_left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.profile_left_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-image: url("../img/Lion_\(165938297\).jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 40px;
+}
+
+.profile_left_text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.profile_left_text div {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.profile_left_text div:nth-child(3) {
+  color: var(--sky--blue--color);
+}
+
+.profile_left_text button {
+  padding: 7px 20px;
+  margin-top: 10px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--sky--blue--color);
+  cursor: pointer;
+}
+
+.profile_left_text button:active {
+  transform: scale(0.98);
+}
+
+.line {
+  border-left: 2px solid gainsboro;
+}
+
+.profile_right {
+  padding-left: 50px;
+}
